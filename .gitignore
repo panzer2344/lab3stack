@@ -37,4 +37,5 @@
 *.sdf
 *.suo
 *.db
+*.opendb
 Debug/
