@@ -14,6 +14,8 @@ public:
 
 	TStack& operator=(const TStack& ts);
 
+	void clear();
+
 	bool isFull();
 	bool isEmpty();
 
@@ -84,4 +86,9 @@ void TStack<T>::push(const T& element) {
 	if (isFull()) throw -1;
 	array[size] = element;
 	size++;
+}
+
+template<class T>
+void TStack<T>::clear() {
+	size = 0;
 }
