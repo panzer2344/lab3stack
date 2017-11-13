@@ -37,7 +37,11 @@ void TCalculator::setinfix(const string& str) {
 	infix = str;
 }
 
-string TCalculator::getpostfix() {
+string TCalculator::getinfix() const {
+	return infix;
+}
+
+string TCalculator::getpostfix() const {
 	return postfix;
 }
 

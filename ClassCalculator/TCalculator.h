@@ -18,7 +18,8 @@ public:
 	TCalculator(const TCalculator& tc): stc(tc.stc), std(tc.std), infix(tc.infix), postfix(tc.postfix) {}
 	
 	void setinfix(const string& str);
-	string getpostfix();
+	string getinfix() const;
+	string getpostfix() const;
 	bool Check();
 	void ToPostfix();
 	double Calculate();

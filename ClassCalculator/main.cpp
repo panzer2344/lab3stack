@@ -4,8 +4,12 @@ void main() {
 	//TCalculator calc();
 	string request;
 
-	cout << "Print ur request: ";
-	cin >> request;
+	while (1) {
+		cout << "Print ur request: ";
+		cin >> request;
 
-	cout << "Answer: " << TCalculator(request).Calculate() << endl;
+		if (request == "exit") break;
+
+		cout << "Answer: " << TCalculator(request).Calculate() << endl;
+	}
 }
