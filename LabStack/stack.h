@@ -1,5 +1,7 @@
 #pragma once
 
+const int STACK_MAX_SIZE = 1000000;
+
 template<class T>
 class TStack {
 private:
@@ -26,7 +28,7 @@ public:
 
 template<class T>
 TStack<T>::TStack(int ms){
-	if (ms <= 0) throw ms;
+	if (ms <= 0 || ms > STACK_MAX_SIZE) throw ms;
 	maxsize = ms;
 	size = 0;
 	array = new T[maxsize];
